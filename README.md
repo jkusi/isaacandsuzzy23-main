@@ -1,3 +1,2 @@
-## wedding-web
-My Bro Wedding Page testing
+## My Bro Wedding Page testing
 
