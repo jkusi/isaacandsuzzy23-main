@@ -24,15 +24,15 @@ pipeline {
 
 		// }
 
-		stage('Docker Build and Push') {
-			steps {
-				withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
-					sh 'printenv'
-					sh 'docker build -t carmichaelc09/wedding:v1 .'
-					sh 'docker push carmichaelc09/wedding:v1'
-				}
-			}
-		}
+		//stage('Docker Build and Push') {
+			//steps {
+				//withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
+					//sh 'printenv'
+					//sh 'docker build -t carmichaelc09/wedding:v1 .'
+					//sh 'docker push carmichaelc09/wedding:v1'
+				//}
+			//}
+		//}
 		// stage('Kubernetes Deployment - DEV') {
 		// 	steps {
 		// 		withKubeConfig([credentialsId: 'kubeconfig']) {
